@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sv style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <title>site vitrin version2</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="bloc1">
+            <img src="682209_20794020_3653390_2a6597e5_image-removebg-preview.png" alt="">
+        </div>
+        <div class="bloc2">
+            <nav>
+                <div class="micon">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+                <ul class="nav-links">
+                      <li><a href="#" onclick="home();" >HOME</a></li>
+                      <li><a href="#" onclick="about();">ABOUT</a></li>
+                      <li><a href="#" onclick="works();">WORKS</a></li>
+                      <li><a href="#" onclick="contact();">CONTACT</a></li>
+                </ul>
+              </nav>
+        </div>
+        <div  id="home">
+        <div class="bloc3">
+            <div class="container-first">
+                <h1><span>BE</span>
+                    <span>A</span>
+                    <span>GUEST</span>
+                    <span>AT</span>
+                    <span>YOUR</span>
+                    <span>WEDDING</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about" style="display: none;">
+        <div class="bloc3" >
+            
+            <div class="parag" style="color: #61603b;" >
+                <H3>ABOUT US</H3><br>
+                It is a company organizing wedding, or festivals established in 2015.
+                facilitate your planning for your wedding offer you what suits you <br>
+                for the wedding of your dreams.Lorem ipsum dolor ,amet consectetur <br>
+                adipisicing elit. Accusantium,reprehenderit? Odio corporis nostrum <br>
+                similique sequi,doloremque fugit impedit Lorem ipsum dolor sit amet<br> 
+                adipisicing elit. Doloribus, accusantium Lorem ipsum dolor sit amet<br>
+                aberatu poli elit. Neque, officia! Lorem ipsum dolor sit amet. Lorem<br>
+                adiKisiLing elit. Neque, officia! Lorem ipsum dolor sit amet. Lorem<br>
+        
+
+            </div> 
+        </div></div>
+        <div id="catalogg" style="display: none;">
+            <div class="bloc3" >
+                <div class="img-slider">
+                    <div class="slide active"><img src="682209_20794020_3653390_2a6597e5_image.jpg" alt="" style="height: 80vh;"></div>
+                    <div class="slide"><img src="333.jpg" alt="" style="height: 80vh;"></div>
+                    <div class="slide"><img src="1taille1200.jpg" alt="" style="height: 80vh;"> </div>
+                    <div class="slide"><img src="222.jpg" alt="" style="height: 80vh;"></div>
+                    <div class="navigation">
+                      <div class="btn active"></div>
+                      <div class="btn"></div>
+                      <div class="btn"></div>
+                      <div class="btn"></div>
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div id="contactjs" style="display: none;" >
+            <div class="bloc3">
+            <div class="containe">
+                <form action="https://formspree.io/f/mgepjnrj" method="POST">
+                    <div class="form-row">
+                      <div class="input-data"><input type="text" required name="first name"><div class="underline"></div>
+                        <label>First Name</label>
+                      </div>
+                        <div class="input-data"><input type="text" required name="last name"><div class="underline"></div>
+                        <label>Last Name</label>
+                    </div>
+                      </div>
+                    <div class="form-row"><div class="input-data"><input type="text" required name="email"><div class="underline"></div>
+                        <label for="">Email Address</label>
+                      </div>
+                      <div class="input-data"><input type="text" required name="message"><div class="underline"></div>
+                      <label for="">Write your message</label>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="input-data textarea">
+                        <br />
+                        <div class="underline"></div>
+                    <br />
+            <div class="form-row submit-btn">
+                      <div class="input-data">
+                        <div class="inner"></div>
+                        <input type="submit" value="submit">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+            <!--media button-->
+            <div class="wrapper">
+                <!--button 1-->
+              <div class="button">
+                <div class="icon">
+       <a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i></a></div>
+        <span>Facebook</span>
+              </div>
+               <!--button 2-->
+        <div class="button">
+                <div class="icon">
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></div>
+        <span>Twitter</span>
+              </div>
+               <!--button 3-->
+        <div class="button">
+                <div class="icon">
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></div>
+        <span>Instagram</span>
+              </div>
+               <!--button 4-->
+        <div class="button">
+                <div class="icon">
+        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
+        <span>YouTube</span>
+              </div>
+        </div>
+        </div>
+        
+        
+    </div>
+    <!--icon click-->
+    <script >
+        const micon = document.querySelector(".micon");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+micon.addEventListener("click", () => {
+navLinks.classList.toggle("open");
+links.forEach(link => {
+  link.classList.toggle("fade");
+});
+});
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+      <script src="vitrin.js"></script>
+      <!--changement js-->
+      <script>
+          function home(){
+            document.getElementById("contactjs").style.display="none";
+            document.getElementById("home").style.display="block";
+            document.getElementById("catalogg").style.display="none";
+            document.getElementById("about").style.display="none";
+           }
+           function about(){
+            document.getElementById("contactjs").style.display="none";
+            document.getElementById("home").style.display="none";
+            document.getElementById("catalogg").style.display="none";
+            document.getElementById("about").style.display="block";
+           }
+           function works(){
+            document.getElementById("contactjs").style.display="none";
+            document.getElementById("home").style.display="none";
+            document.getElementById("catalogg").style.display="block";
+            document.getElementById("about").style.display="none";
+           }
+           function contact(){
+            document.getElementById("contactjs").style.display="block";
+            document.getElementById("home").style.display="none";
+            document.getElementById("catalogg").style.display="none";
+            document.getElementById("about").style.display="none";
+           }
+      </script>
+      <!--slider js-->
+      <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+    
+        // Javascript for image slider manual navigation
+        var manualNav = function(manual){
+          slides.forEach((slide) => {
+            slide.classList.remove('active');
+    
+            btns.forEach((btn) => {
+              btn.classList.remove('active');
+            });
+          });
+    
+          slides[manual].classList.add('active');
+          btns[manual].classList.add('active');
+        }
+    
+        btns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+            manualNav(i);
+            currentSlide = i;
+          });
+        });
+    
+        // Javascript for image slider autoplay navigation
+        var repeat = function(activeClass){
+          let active = document.getElementsByClassName('active');
+          let i = 1;
+    
+          var repeater = () => {
+            setTimeout(function(){
+              [...active].forEach((activeSlide) => {
+                activeSlide.classList.remove('active');
+              });
+    
+            slides[i].classList.add('active');
+            btns[i].classList.add('active');
+            i++;
+    
+            if(slides.length == i){
+              i = 0;
+            }
+            if(i >= slides.length){
+              return;
+            }
+            repeater();
+          }, 10000);
+          }
+          repeater();
+        }
+        repeat();
+        </script>
+        <script>
+            const titreSpans=document.querySelectorAll('h1 span');
+const l1=document.querySelectorAll('.l1');
+const l2=document.querySelectorAll('.l2');
+
+window.addEventListener('load',() =>{
+    const TL =gsap.timeline({paused: true});
+    TL.staggerFrom(titreSpans,1, {top:-50, opacity: 0, ease:"power2.out"},0.3)
+    TL.play();
+})
+        </script>
+
+</body>
+</html>
